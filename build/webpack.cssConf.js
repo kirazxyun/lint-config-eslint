@@ -1,4 +1,4 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = function (config) {
   return {
@@ -26,5 +26,5 @@ module.exports = function (config) {
     plugins: [
       new ExtractTextPlugin(config.output.filename.replace('[ext]', '.css'))
     ]
-  };
-};
+  }
+}

@@ -5,7 +5,8 @@
   "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "lint": "eslint build/** src/** ft.config.js --fix"
   },
   "dependencies": {},
   "devDependencies": {

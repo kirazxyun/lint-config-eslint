@@ -1,7 +1,7 @@
-var path = require('path');
+var path = require('path')
 
-function resolve(dir) {
-  return path.join(__dirname, '..', dir);
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
 }
 
 module.exports = function (config) {
@@ -11,8 +11,11 @@ module.exports = function (config) {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
-        include: [resolve('src')]
+        include: [resolve('src')],
+        options: {
+          fix: true
+        }
       }]
     }
-  };
-};
+  }
+}
