@@ -3,6 +3,9 @@
     "browser": true
   },
   "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "extends": "standard",
   "rules": {}
 }
